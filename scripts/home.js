@@ -126,6 +126,8 @@ const zoom = document.getElementById('zoom');
 const minTranslateX = 0;
 const maxTranslateX = 0;
 
+let zoomedOut = false;
+
 addEventListener('scroll', e => {
     const vh = window.innerHeight / 100;
     const scrollTop = document.documentElement.scrollTop;
@@ -138,16 +140,23 @@ addEventListener('scroll', e => {
     const start = wrapHeight;
     const stop = start + (100 * vh); // Adjust the numeric value as needed to make the zooming in/out animation faster/slower
 
-    if (scrollTop > start && scrollTop < stop) {
-        // Calculate the scale value
-        const scale = Math.max(2.3 - (scrollTop - start) / 400, 1); // adjust the value "200" to make it scale faster / slower
-        
-        // Calculate the value of which the image should move to the left / right. 
-        // We need this since the image it zooms into is not perfectly horizontally centered.
-        const translateX = Math.max(maxTranslateX - (scrollTop - start) / ((stop - start) / (maxTranslateX - minTranslateX)), minTranslateX);
-
-        // Apply both scale and translateX (horizontal moving)
-        zoom.style.transform = `scale(${scale}) translateX(${translateX}vw)`;
+    if(!zoomedOut){
+        if (scrollTop > start && scrollTop < stop) {
+            // Calculate the scale value
+            const scale = Math.max(2.3 - (scrollTop - start) / 400, 1); // adjust the value "200" to make it scale faster / slower
+            
+            // Calculate the value of which the image should move to the left / right. 
+            // We need this since the image it zooms into is not perfectly horizontally centered.
+            const translateX = Math.max(maxTranslateX - (scrollTop - start) / ((stop - start) / (maxTranslateX - minTranslateX)), minTranslateX);
+    
+            // Apply both scale and translateX (horizontal moving)
+            zoom.style.transform = `scale(${scale}) translateX(${translateX}vw)`;
+            
+        }
+    }
+    if(scrollTop >= stop){
+        zoomedOut = true;
+        document.getElementById("zoom").style.position = "static";
     }
 });
 

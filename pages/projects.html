@@ -112,34 +112,36 @@
 
     <div class="card projectsContainer fadeIntoCanvas">
         <h3 class="projectsH3"><a href="https://basedbodyworks.com/">Based Bodyworks</a></h3>
-        <div class="textProject">
-            <p class="projectsPar"> We collaborated with Based Bodyworks, a male hair product brand, to bring their product listings to life through high-quality 3D renders. By showcasing their unique ingredients and customer testimonials in visually striking images, we made these exciting renders accessible to them. This approach significantly improved their website conversion rates compared to traditional real-life photos.</p>
-            <div class="projectsGroup projectsBoxLayout projects twoSquareGrid" id="basedGroup">
+        <div class="basedProjects">
+            <div class="text">
+                <p> We collaborated with Based Bodyworks, a male hair product brand, to bring their product listings to life through high-quality 3D renders. By showcasing their unique ingredients and customer testimonials in visually striking images, we made these exciting renders accessible to them. This approach significantly improved their website conversion rates compared to traditional real-life photos.</p>
+            </div>
+            <div class="projectsGroup projectsBoxLayout projects" id="basedGroup">
                 <div class="projectDiv" id="test" href="#basedGroup">
-                    <img src="../assets/based/3comp.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 0);'>
+                    <img src="../assets/based/3comp.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 0); toggleCarouselNav(true);'>
                 </div>
                 <div class="projectDiv">
-                    <img src="../assets/based/4.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 1);' href="#basedGroup">
+                    <img src="../assets/based/4.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 1); toggleCarouselNav(true);' href="#basedGroup">
                 </div>
                 <div class="projectDiv">
-                    <img src="../assets/based/6.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 2);' href="#basedGroup">
+                    <img src="../assets/based/6.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 2); toggleCarouselNav(true);' href="#basedGroup">
                 </div>
                 <div class="projectDiv">
-                    <img src="../assets/based/peelfinal.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 3);' href="#basedGroup">
+                    <img src="../assets/based/peelfinal.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 3); toggleCarouselNav(true);' href="#basedGroup">
                 </div>
                 <div class="projectDiv">
-                    <img src="../assets/based/usp.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 4);' href="#basedGroup">
+                    <img src="../assets/based/usp.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 4); toggleCarouselNav(true);' href="#basedGroup">
                 </div>
                 <div class="projectDiv">
-                    <img src="../assets/based/whitebg.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 5);' href="#basedGroup">
+                    <img src="../assets/based/whitebg.png" alt="3D render for Based Bodyworks" class="project" onclick='openModal(items[2], 5); toggleCarouselNav(true);' href="#basedGroup">
                 </div>
             </div>
         </div>
-
+        <!--
         <div class="reviewGroup">
             <h3 class="reviewH3">Review from Based</h3>
             <video class="reviewVid" src="../assets/videos/review1.mp4" controls="" alt="A video review from Based" poster="../assets/thumbnails/reviewThumbnail.png"></video>
-        </div>
+        </div>  -->
 
         <h3 class="projectsH3"><a href="https://www.bareperformancenutrition.com/">BPN</a></h3>
         <div class="showcaseGroup">
@@ -179,16 +181,16 @@
     <h3 class="projectsH3" id="videos">Animations</h3>
         <div class="projectsGroup projectsBoxLayout">
             <div class="projectDiv">
-                <img src="../assets/thumbnails/bottleThumbnail.png" alt="3D rendered video for Naturate" class="project" onclick='openModal(items[10], 0);'>
+                <img src="../assets/thumbnails/bottleThumbnail.png" alt="3D rendered video for Naturate" class="project" onclick='openModal(items[10], 0); toggleCarouselNav(false);'>
             </div>
             <div class="projectDiv">
-                <img src="../assets/thumbnails/domeThumbnail.png" alt="3D rendered video for Dome Health and Theia Bio" class="project" onclick='openModal(items[11], 0);'>
+                <img src="../assets/thumbnails/domeThumbnail.png" alt="3D rendered video for Dome Health and Theia Bio" class="project" onclick='openModal(items[11], 0); toggleCarouselNav(false);'>
             </div>
             <!-- <div class="projectDiv">
                 <img src="../assets/thumbnails/soulbrewThumbnail.png" alt="3D rendered video for soulbrew" class="project" onclick='openModal(items[12], 0);'>
             </div> -->
             <div class="projectDiv">
-                <img src="../assets/thumbnails/sphereThumbnail.png" alt="abstract 3D rendered video of a sphere" class="project" onclick='openModal(items[13], 0);'>
+                <img src="../assets/thumbnails/sphereThumbnail.png" alt="abstract 3D rendered video of a sphere" class="project" onclick='openModal(items[13], 0); toggleCarouselNav(false);'>
             </div>
             <!-- <div class="projectDiv">
                 <img src="../assets/thumbnails/vrThumbnail.png" alt="3D rendered video of Apple Vision Pro" class="project" onclick='openModal(items[6], 0);'>
@@ -198,26 +200,26 @@
         <!-- This is a classic projects group -->
         <div class="projectsGroup projectsBoxLayout" id="stills">
             <div class="projectDiv">
-                <img src="../assets/21.jpeg" alt="3D render for LANEIGE" class="project"  onclick='openModal(items[3], 0);'>
+                <img src="../assets/21.jpeg" alt="3D render for LANEIGE" class="project"  onclick='openModal(items[3], 0); toggleCarouselNav(false); toggleCarouselNav(false);'>
             </div>
             
             <!-- <div class="projectDiv">
                 <img src="../assets/111skin.jpg" alt="3D render for 111 Skin" class="project"  onclick='openModal(items[4], 0);'>
             </div> -->
             <div class="projectDiv">
-                <img src="../assets/BasedBalm_still.jpg" alt="3D render for Based Balm" class="project"  onclick='openModal(items[5], 0);'>
+                <img src="../assets/BasedBalm_still.jpg" alt="3D render for Based Balm" class="project"  onclick='openModal(items[5], 0); toggleCarouselNav(false);'>
             </div>
             <div class="projectDiv">
-                <img src="../assets/vr.jpg" alt="3D render of Apple Vision Pro" class="project"  onclick='openModal(items[6], 1);'>
+                <img src="../assets/vr.jpg" alt="3D render of Apple Vision Pro" class="project"  onclick='openModal(items[6], 1); toggleCarouselNav(false);'>
             </div>
             <div class="projectDiv">
-                <img src="../assets/LaPerse_still.jpg" alt="3D Render for LA PERSE" class="project"  onclick='openModal(items[7], 0);'>
+                <img src="../assets/LaPerse_still.jpg" alt="3D Render for LA PERSE" class="project"  onclick='openModal(items[7], 0); toggleCarouselNav(false);'>
             </div>
             <div class="projectDiv">
-                <img src="../assets/glasses.png" alt="3D render of a pair of glasses" class="project"  onclick='openModal(items[8], 0);'>
+                <img src="../assets/glasses.png" alt="3D render of a pair of glasses" class="project"  onclick='openModal(items[8], 0); toggleCarouselNav(false);'>
             </div>
             <div class="projectDiv">
-                <img src="../assets/dolce.jpg" alt="3D render of a perfume from Dolce & Gabbana" class="project"  onclick='openModal(items[9], 0);'>
+                <img src="../assets/dolce.jpg" alt="3D render of a perfume from Dolce & Gabbana" class="project"  onclick='openModal(items[9], 0); toggleCarouselNav(false);'>
             </div>
             <!-- <div class="projectDiv">
                 <img src="../assets/livingThings/lg.png" alt="3D Render of a lemon ginger soda for Living Things" class="project"  onclick='openModal(items[1], 0);'>

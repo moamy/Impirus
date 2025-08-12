@@ -4,7 +4,7 @@ body{
 
 #aboutUsContainer, #contactContainer{
     padding: 3rem 0 5rem 0;
-    width: 100vw;
+    width: 100%;
 }
 #contactContainer{
     background: url(../assets/contactBackground.png);
@@ -83,7 +83,6 @@ body{
 }
 
 #aboutUs{
-    font-family: Horizon;
     width: 70vw;
     color: white;
     display: grid;

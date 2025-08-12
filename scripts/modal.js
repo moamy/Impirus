@@ -352,8 +352,8 @@ function openModal(item, ind) {
     if (document.getElementById('mouseOverlay') != null) {
         document.getElementById('mouseOverlay').style.display = "none";
     }
-    document.getElementById('modalTitle').innerHTML = item[1];
-    document.getElementById('modalH3').innerHTML = item[1];
+    /* document.getElementById('modalTitle').innerHTML = item[1];
+    document.getElementById('modalH3').innerHTML = item[1]; */
     prevButton.style.display = "flex";
     nextButton.style.display = "flex";
     if (item[0].length <= 1) {

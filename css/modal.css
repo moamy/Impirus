@@ -76,7 +76,6 @@
 }
 
 #modalTitle{
-    font-family: Horizon;
     position: absolute;
     left: 1rem;
     color: white;
@@ -128,6 +127,10 @@
     flex: 0 0 100%; /* Each slide takes full width */
     /* Optionally, add additional styling like padding or margin */
 }
+.carousel-paragraph{
+    margin-top: 2rem;
+}
+
 
 .carousel-slide > *{
     min-width: auto;

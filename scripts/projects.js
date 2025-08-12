@@ -119,3 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+function toggleCarouselNav(bool){
+    if(bool){ document.querySelector(".carouselNav").style.display = "flex"; }
+    else { document.querySelector(".carouselNav").style.display = "none"; }
+}

@@ -14,9 +14,9 @@ body {
 canvas {
   display: block;
   z-index: 1;
+  width: 100%;
 }
 #canvasH2{
-    font-family: Horizon;
     position: absolute;
     font-weight: 700;
     font-size: 5em;
@@ -104,7 +104,6 @@ canvas {
 }
 .projectsH3 {
   font-size: 3rem;
-  font-family: Horizon-full;
 
   /* border-bottom: 2px solid rgba(0, 0, 0, 0.4); */
   margin: 4em 0 2rem;
@@ -177,6 +176,12 @@ canvas {
   position: relative;
   z-index: 2;
 }
+.projectsContainer{
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
 .projectsContainer::before,
 .projectsContainer::after,
 .fadeIntoCanvas::before {
@@ -220,7 +225,6 @@ canvas {
   padding-left: 1.5rem;
 
   margin-bottom: 2rem;
-  font-size: 3rem;
   font-weight: light;
   word-spacing: 30%;
 }
@@ -228,21 +232,28 @@ canvas {
 .projectsGroup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 102vw;
-  gap: 2rem 15px;
+  width: 80%;
+  gap: 10px;
   min-width: fit-content;
+}
+.basedProjects{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .twoSquareGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 55vw;
-  gap: 2rem 2rem;
+  width: 50%;
+  gap: 2rem;
   min-width: fit-content;
   height: fit-content;
 }
 .textProject {
   display: flex;
-  width: fit-content;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }
@@ -263,14 +274,12 @@ canvas {
     top: calc(50% - 2px);
     border: 1px solid rgba(#f2f4f8, 0);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
     cursor: pointer;
   }
 
   &:active {
     top: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
     transition: ease-in-out 0.1s;
   }
 }
@@ -279,7 +288,6 @@ canvas {
   min-height: 100%;
   height: auto;
   width: auto;
-  border-radius: 25px;
 }
 .projectDiv {
   width: 30vw;
@@ -297,7 +305,6 @@ canvas {
 }
 .reviewH3,
 .textH2 {
-  font-family: Horizon;
   text-align: center;
   grid-area: sectionH2;
   font-weight: 700;
@@ -313,7 +320,6 @@ canvas {
   overflow-x: hidden;
   background-color: #e5e5e5;
   padding: 1rem 0 4rem 0;
-  border-radius: 15px;
   margin: auto;
 }
 .showcaseVideos {
@@ -324,7 +330,7 @@ canvas {
   gap: 2rem;
 }
 .textGroup {
-  margin-top: 2rem;
+  margin: auto;
   width: 90vw;
   display: flex;
   justify-content: space-around;
@@ -351,11 +357,9 @@ canvas {
 .showcase {
   height: auto;
   max-width: 400px;
-  border-radius: 15px;
 }
 .reviewVid {
-  width: 60%;
-  border-radius: 25px;
+  width: 40%;
 }
 .videoShowcase {
   width: 50%;
@@ -400,7 +404,6 @@ canvas {
   padding: 2rem;
 }
 .contactContent h2 {
-  font-family: Horizon;
   font-size: 3rem;
   margin-bottom: 2rem;
   animation: changeFont 10s infinite;
@@ -425,19 +428,12 @@ For example: "@media screen and (max-width: 1100px)" includes styling that will 
 */
 
 @media screen and (min-width: 1200px) {
-  .projectsPar {
-    font-size: 2.5rem;
-    text-align: start;
-  }
   .text p {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .projectsPar {
-    font-size: 2rem;
-  }
   .reviewH3 {
     width: fit-content;
     text-align: center;
@@ -453,9 +449,6 @@ For example: "@media screen and (max-width: 1100px)" includes styling that will 
   }
 }
 @media screen and (max-width: 1100px) {
-  .projectsPar {
-    font-size: 2rem;
-  }
 }
 @media screen and (max-width: 1000px) {
   .showcaseGroup {
@@ -468,9 +461,6 @@ For example: "@media screen and (max-width: 1100px)" includes styling that will 
 @media screen and (max-width: 950px) {
   .text {
     width: 90%;
-  }
-  .projectsPar {
-    font-size: 2rem;
   }
   .text p {
     max-width: 80%;

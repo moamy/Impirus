@@ -411,7 +411,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     font-family: NSimSun;  <----- Change this!!!!
     outline: none;

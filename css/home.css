@@ -1,11 +1,11 @@
 #contentWrapper {
-  width: 100vw;
+  width: 100%;
   height: auto;
   overflow: clip;
   position: relative;
 }
 #landingSection {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@
   position: relative;
 }
 .sectionContainer {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@
   background-color: white;
 }
 .vslSection {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -363,13 +363,13 @@
 @keyframes fadeInFixedWidth {
   from {
     height: 0.8;
-    width: 100vw;
+    width: 100%;
     opacity: 0;
     transform: translateY(-20%);
   }
   to {
     height: 1;
-    width: 100vw;
+    width: 100%;
     opacity: 1;
     transform: translateY(0);
   }
@@ -429,7 +429,7 @@
 /* Review section */
 
 .reviewSection {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -599,7 +599,7 @@ iframe {
 
 .contactCard {
   height: 60vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -704,7 +704,7 @@ iframe {
 
 .bottom h2 {
   font-size: 3.5rem;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   margin-top: 4rem;
 }
@@ -758,7 +758,7 @@ For example: "@media screen and (max-width: 1100px)" includes styling that will 
 @media screen and (max-width: 1450px) {
     .vslContent{
         gap: 1rem;
-        width: 100vw;
+        width: 100%;
     }
     #vslHeading{
         font-size: 2rem;
